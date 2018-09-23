@@ -6,7 +6,7 @@
     background: url(images/background-silver.jpg);
     margin-bottom: 40px;
   }
-  
+
   #page-wrap{
     margin-left: 100px;
     width: 1200px;
@@ -37,19 +37,23 @@
   .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+
   }
 
-  .column{
-    padding: 20px;
+  .column1{
+    flex-basis: 20%;
   }
+  .column2{
+    flex-basis:25%;
+  }
+  .column3{
+    flex-basis: 25%;
+  }
+  .column4{
+    flex-basis: 20%;
 
-  .column-side{
-    flex:1;
-  }
-  .column-middle{
-    flex:2;
   }
 
   .spin{
