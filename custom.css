@@ -1,0 +1,112 @@
+
+  body {
+    max-width: 1000px;
+    line-height: 24px;
+    font: 14px;
+    background: url(images/background-silver.jpg);
+    margin-bottom: 40px;
+  }
+  
+  #page-wrap{
+    margin-left: 100px;
+    width: 1200px;
+  }
+  #pic {
+    position: fixed;
+    bottom: 0;
+    right:0;
+  }
+
+  #pic2 {
+    float: right;
+  }
+
+  #name {
+    font-size: 50px;
+    margin-top: 100px;
+  }
+
+  #basic-info {
+    margin-top: 20px;
+  }
+
+  .h1 {
+    margin-top: 50px;
+  }
+
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .column{
+    padding: 20px;
+  }
+
+  .column-side{
+    flex:1;
+  }
+  .column-middle{
+    flex:2;
+  }
+
+  .spin{
+    margin-right: 20px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+
+  @keyframes spin{
+    from{
+      transform:rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  }
+
+  h1 {
+    color: #800000;
+    font-family: 'Roboto Slab', serif;
+  }
+  h2{
+    font-family: 'Roboto Slab', serif;
+  }
+  h3 {
+    margin-top: -10px;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+  }
+
+  h4 {
+    margin-top: -10px;
+  }
+
+  p {
+    margin-top: -20px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+
+  li {
+    color: rgb();
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  @media (max-width: 1000px) {
+    .flex-container{
+      flex-direction:column;
+    }
+    img{
+      display:none;
+    }
+    #title{
+      text-align: center;
+    }
+
+  }

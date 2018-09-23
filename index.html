@@ -9,91 +9,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Liyan's Resume</title>
-  <style type="text/css">
-    body {
-      line-height: 24px;
-      font: 14px;
-      background: url(images/background-silver.jpg);
-      margin-bottom: 40px;
-    }
-
-    #page-wrap {
-      width: 1000px;
-      margin-left: 250px;
-    }
-
-    #pic {
-      float: right;
-      margin: 30px 0 0 0;
-    }
-
-    #pic2 {
-      float: right;
-      margin-top: 20px;
-    }
-
-    #name {
-      font-size: 50px;
-      margin-top: 100px;
-    }
-
-    #basic-info {
-      margin-top: 20px;
-    }
-
-    .h1 {
-      margin-top: 50px;
-    }
-
-    h1 {
-      color: #800000;
-    }
-
-    h3 {
-      margin-top: -10px;
-    }
-
-    h4 {
-      margin-top: -10px;
-    }
-
-    p {
-      margin-top: -20px;
-      font-size: 20px;
-    }
-
-
-    li {
-      color: rgb();
-      font-size: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Source+Code+Pro" rel="stylesheet">
 </head>
 
 <body>
-  <img src="images/my pic1.jpg" width="1500", height="1100", alt="Photo of Cthulu", id="myPic">
+
+  <img src="images/my pic1.jpg" width="1500px",  height="1200px", alt="Photo of Cthulu", id="myPic">
   <div id="page-wrap">
 
     <img src="images/profile2.gif" width="250", height="250", alt="Photo of Cthulu", id="pic">
 
-    <h1 id="name">Liyan Peng</h1>
-    <h2 id="icon">Entrepreneur & Educator | Fast Learner & Problem Solver</h2>
+    <div class="intro">
+      <h1 id="name">Liyan Peng</h1>
+      <h2 id="icon">Entrepreneur & Educator | Fast Learner & Problem Solver</h2>
 
-    <p id="basic-info">
-      Phone: +1 646-785-1401 |
-      Email: <a href="lp2740@tc.columbia.edu"> lp2740@tc.columbia.edu</a>
-      | LinkedIn: <a href=" https://www.linkedin.com/in/liyan-peng/" target="_blank">click here</a>
-      <br/>Adress: 525 West 120th Street, New York, NY 10027
-      <div>
+      <p id="basic-info">
+        <i class="fas fa-mobile-alt fa-lg fa-fw"></i>Phone: +1 646-785-1401 |
+        <i class="far fa-envelope fa-lg fa-fw" ></i><a href="lp2740@tc.columbia.edu"> lp2740@tc.columbia.edu</a> |
+        <i class="fab fa-linkedin-in fa-lg fa-fw" ></i><a href=" https://www.linkedin.com/in/liyan-peng/" target="_blank">LinkedIn Profile</a>
+        <br/>Adress: 525 West 120th Street, New York, NY 10027</p>
+    </div>
 
-        <h1 class="h1">EDUCATION</h1>
+    <div class="flex-container">
+      <div class="column-side">
+
+        <h1 >EDUCATION</h1>
 
         <div>
           <h2><a href="https://www.tc.columbia.edu/" target="_blank">Teachers College, Columbia University</a></h2>
           <h3>New York, NY, Expected 05/2019</h3>
           <ul><strong>
-        <li>Master of Arts in Instructional Technology & Media</li>
-      </strong>
+    <li>Master of Arts in Instructional Technology & Media</li>
+  </strong>
             <li>GPA: 4.00/4.00 | Awards: Teachers College Scholarship</li>
             <li>Courses: Feature Engineering Studio; Learning Analytics: Process & Theory; Virtual, Augmented, Mixed Reality Learning; Introduction to Education Technology & Learning Sciences</li>
             <li>Course Assistant: Objected-Oriented Programming & Theory</li>
@@ -104,16 +53,16 @@
           <h2><a href="http://www.bnu.edu.cn/" target="_blank">Beijing Normal University</a></h2>
           <h3>Beijing, China, 07/2017</h3>
           <ul><strong>
-        <li>Bachelor of Science in Chemistry, Minor in Pedagogy</li>
-      </strong>
+    <li>Bachelor of Science in Chemistry, Minor in Pedagogy</li>
+  </strong>
             <li>GPA: 3.82/4.00 (5%) | GRE: 330 | Awards: First-Class Professional Scholarship, Social Work Scholarship</li>
             <li>Courses: Advanced Mathematics, Basic Physics, C Language</li>
           </ul>
         </div>
       </div>
 
-      <div>
-        <h1 class="h1">PROJECTS</h1>
+      <div class="column-middle">
+        <h1>PROJECTS</h1>
 
         <div>
           <h2>Baby Light - Columbia Startup Competition Top 8</h2>
@@ -143,8 +92,8 @@
         </div>
       </div>
 
-      <div>
-        <h1 class="h1">PROFESSIONAL EXPERIENCE</h1>
+      <div class="column-middle">
+        <h1>PROFESSIONAL EXPERIENCE</h1>
         <div>
           <h2><a href="http://pimchina.org/en/home-2-2/" target="_blank">Philanthropy in Motion</a></h2>
           <p>A social enterprise focusing on providing investment and consultancy services for non-profit organizations</p>
@@ -174,18 +123,21 @@
         </div>
       </div>
 
-      <div>
-        <h1 class="h1">SKILLS AND CERTIFICATES</h1>
+      <div class="column-side">
+        <h1 >SKILLS AND CERTIFICATES</h1>
         <ul>
           <li>Certificates: <a href="https://www.coursera.org/account/accomplishments/certificate/GELCAEGGEHXB" target="_blank">Digital Product Management: Modern Fundamentals by University of Virginia on Coursera, </a> <a href="https://www.coursera.org/account/accomplishments/certificate/6HN3GF8EX2RZ" target="_blank">Business Metrics for Data-Driven Companies by Duke University on Coursera</a></li>
           <li>Native in Mandarin</li>
           <li>Proficiency in PowerPoint, Word and Excel, Google applications, Java, SQL, R, Axure, MockingBot</li>
         </ul>
       </div>
+    </div>
 
-    </p>
     <img src="images/heart2.gif" width="300", alt="Photo of Cthulu", id="pic2">
-  </div>
+
+</div>
+
+
 </body>
 
 </html>
